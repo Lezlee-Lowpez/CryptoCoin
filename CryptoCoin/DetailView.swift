@@ -16,8 +16,7 @@ struct DetailView: View {
         if let theCoin = cryptoModel.coin {
             VStack{
                 
-                Text("might insert images here")
-                    .padding()
+                ImageView(imageUrl: cryptoModel.coin?.image ?? "")
                 
                 Text(cryptoModel.coin?.name ?? "Couldn't retrieve name")
                     .font(.title)
