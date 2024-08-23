@@ -13,6 +13,9 @@ struct ContentView: View {
     
     
     var body: some View {
+        
+        @Bindable var model = cryptoModel
+        
         ZStack {
             Color.yellow
                 .ignoresSafeArea()
@@ -27,8 +30,16 @@ struct ContentView: View {
                     ForEach(cryptoModel.coins){ coin in
                         Text(coin.name)
                         
+                        // when you tap on a name in the list we set that to the coin var in our model
+                        // so its universally accessable
+                    .onTapGesture(
+                        perform: {
+                        cryptoModel.coin = coin
+                        })
                     }
+                    
                 }
+                
                 .listStyle(.plain)
                 .padding()
             }
@@ -36,6 +47,9 @@ struct ContentView: View {
        
         .onAppear{
             cryptoModel.getCoins()
+        }
+        .sheet(item: $model.coin) { item in
+            DetailView()
         }
         
     }

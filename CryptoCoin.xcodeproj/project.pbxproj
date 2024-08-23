@@ -14,6 +14,7 @@
 		6F4B73F62C76B3D700A3EFAE /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B73F52C76B3D700A3EFAE /* DataService.swift */; };
 		6F4B73F82C76B43100A3EFAE /* CryptoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B73F72C76B43100A3EFAE /* CryptoModel.swift */; };
 		6F4B73FA2C76B73A00A3EFAE /* CryptoCoins.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F4B73F92C76B73A00A3EFAE /* CryptoCoins.swift */; };
+		6F5556442C79405F0096651A /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F5556432C79405F0096651A /* DetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		6F4B73F52C76B3D700A3EFAE /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		6F4B73F72C76B43100A3EFAE /* CryptoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoModel.swift; sourceTree = "<group>"; };
 		6F4B73F92C76B73A00A3EFAE /* CryptoCoins.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoCoins.swift; sourceTree = "<group>"; };
+		6F5556432C79405F0096651A /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				6F4B73F32C76B32D00A3EFAE /* Info.plist */,
 				6F4B73E42C76A12D00A3EFAE /* CryptoCoinApp.swift */,
 				6F4B73E62C76A12D00A3EFAE /* ContentView.swift */,
+				6F5556432C79405F0096651A /* DetailView.swift */,
 				6F4B73F42C76B3B900A3EFAE /* Model */,
 				6F4B73E82C76A13100A3EFAE /* Assets.xcassets */,
 				6F4B73EA2C76A13100A3EFAE /* Preview Content */,
@@ -159,6 +162,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6F4B73F62C76B3D700A3EFAE /* DataService.swift in Sources */,
+				6F5556442C79405F0096651A /* DetailView.swift in Sources */,
 				6F4B73FA2C76B73A00A3EFAE /* CryptoCoins.swift in Sources */,
 				6F4B73E72C76A12D00A3EFAE /* ContentView.swift in Sources */,
 				6F4B73F82C76B43100A3EFAE /* CryptoModel.swift in Sources */,
