@@ -29,7 +29,7 @@ struct DataService {
             //url session
             do {
                 let (data, response) = try await URLSession.shared.data(for:request)
-                print("printing data \(data)")
+                
                 
                 let decoder = JSONDecoder()
                 let results = try decoder.decode([CryptoCoins].self, from: data)
