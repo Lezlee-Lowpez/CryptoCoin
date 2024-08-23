@@ -9,21 +9,35 @@ import SwiftUI
 
 struct ContentView: View {
     
-    var dataService = DataService()
+    @Environment(CryptoModel.self) var cryptoModel
+    
     
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .onAppear{
-            Task {
-                await dataService.getData()
+        ZStack {
+            Color.yellow
+                .ignoresSafeArea()
+            
+            VStack {
+                
+                Text("Crypto Coins")
+                    .font(.title)
+                    .bold()
+                
+                List {
+                    ForEach(cryptoModel.coins){ coin in
+                        Text(coin.name)
+                        
+                    }
+                }
+                .listStyle(.plain)
+                .padding()
             }
         }
-        .padding()
+       
+        .onAppear{
+            cryptoModel.getCoins()
+        }
+        
     }
 }
 

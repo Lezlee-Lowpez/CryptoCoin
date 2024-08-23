@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct CryptoCoins: Codable {
+struct CryptoCoins: Codable, Identifiable{
     var id: String
     var name: String
     var image: String
